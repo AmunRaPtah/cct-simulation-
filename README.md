@@ -12,7 +12,7 @@ Companion code to the CCT Model Trilogy:
 - **Paper 2 (Specification):** Olutogun E (2026). Formal Mathematical Specification of the CCT Model: Encoding Probability Dynamics and Quantitative Predictions for Preclinical Validation. Preprint, OSF.
 - **Paper 3 (Human Translation):** Olutogun E (2026). Consolidation Threshold Dynamics in Human Drug-Associated Learning: Bayesian Parameter Integration, Population Heterogeneity, and Clinical Trial Architecture for the CCT Model. Preprint, OSF.
 
-**Author:** Eniola Olutogun | OIQB, Lagos, Nigeria | ORCID: 0009-0001-9272-6735
+**Author:** Eniola Olutogun | Independent Researcher, Lagos, Nigeria | ORCID: 0009-0001-9272-6735
 
 ---
 
@@ -73,10 +73,12 @@ The `--ranges` flag loads Table 1 literature midpoints (not calibrated posterior
 | `requirements.txt` | Python dependencies |
 | `LICENSE` | MIT License |
 | `.gitignore` | Python standard gitignore |
-| `docs/CCT_Master_Parameter_Table_S1.md` | Master parameter table S1 (literature-derived ranges, all three papers) |
-| `docs/CCT_Review_Paper1.md` | Paper 1: Theoretical and translational review (preprint) |
-| `docs/CCT_Mathematical_Specification_Paper2.md` | Paper 2: Formal mathematical specification (preprint) |
-| `docs/CCT_Human_Translation_Paper3.md` | Paper 3: Human translation and clinical trial design (preprint) |
+
+The three companion papers referenced above are not bundled as local files in this
+repository — read them directly at their preprint DOIs:
+- Paper 1 (Review): https://doi.org/10.17605/OSF.IO/KG7B5
+- Paper 2 (Specification): https://doi.org/10.17605/OSF.IO/EMY4U
+- Paper 3 (Human Translation): https://doi.org/10.5281/zenodo.20492472
 
 ---
 
