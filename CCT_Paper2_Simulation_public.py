@@ -5,8 +5,7 @@ Conjunctive Consolidation Threshold (CCT) Model
 2x2x2 Factorial Simulation -- Paper 2 Companion Code (Public Reference Implementation)
 
 Author: Eniola Olutogun
-Affiliation: Olutogun Institute of Quantitative Biosciences (OIQB), Lagos, Nigeria
-             Founder and Principal Investigator
+Affiliation: Independent Researcher, Lagos, Nigeria
 ORCID: 0009-0001-9272-6735
 
 Repository: https://github.com/AmunRaPtah/cct-simulation-
@@ -592,7 +591,7 @@ def main(use_ranges=False):
 
     print(SEP)
     print("CCT Model -- Public Reference Implementation")
-    print("Eniola Olutogun | OIQB | ORCID: 0009-0001-9272-6735")
+    print("Eniola Olutogun | ORCID: 0009-0001-9272-6735")
     print(SEP)
     print()
     print("IMPORTANT: This implementation uses placeholder parameters.")
