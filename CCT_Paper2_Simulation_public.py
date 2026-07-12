@@ -17,13 +17,11 @@ and ODE system of the CCT model. Parameter placeholders (alpha_1, beta_1, etc.)
 are set to normalized baseline test values (0.5 by default) sufficient to
 reproduce the qualitative architecture and run the sensitivity analysis.
 
-Empirically calibrated implementation-specific coefficients used in the
-simulation outputs reported in the companion manuscript are held in a private
-environment and will be disclosed subject to the author's provisional patent
-filing. Researchers wishing to reproduce the reported quantitative outputs
-(E_final = 0.855 vehicle condition, super-additivity index 12.8 pp) should
-use the parameter ranges specified in Table 1 of the manuscript as the
-optimization target space.
+No manuscript for this project has been submitted yet, and no set of final,
+independently-reproducible calibrated coefficients has been published. Use the
+literature-bounded parameter ranges (Table 1 / MANUSCRIPT_RANGES below, sourced
+from the companion Master Parameter Table) as an exploratory space, not as a
+target for reproducing a specific published number.
 
 Version history:
   v1_0: Initial implementation
@@ -45,7 +43,7 @@ Outputs:
     - CCT_Paper2_Fig3_Sensitivity.png
     - CCT_factorial_results.csv
 
-REPRODUCIBILITY AND IP NOTICE
+REPRODUCIBILITY NOTE
 ==============================
 This public reference implementation uses normalized placeholder parameters
 (all set to 0.5). It reproduces the qualitative architecture of the CCT model:
@@ -53,19 +51,13 @@ This public reference implementation uses normalized placeholder parameters
   - D1/D5 permissive gate cross-axis coupling
   - Positive super-additivity direction (combination > Bliss independence)
 
-It does NOT reproduce the exact quantitative outputs reported in the manuscript
-(e.g., specific E_final values, specific super-additivity percentage points).
-Exact calibrated parameters are proprietary and subject to pending patent filing
-by the author (ORCID: 0009-0001-9272-6735).
+No manuscript has been submitted for this project yet, so there is no published
+quantitative result to reproduce. Fully calibrated, independently reproducible
+parameters and results will be published here once that work is complete.
 
-To reproduce qualitative architecture: run with default placeholder parameters.
-To explore the parameter space: use --ranges flag to load MANUSCRIPT_RANGES dict,
-which samples from Table 1 literature-bounded ranges (midpoints only).
-Neither option reproduces exact manuscript outputs.
-
-Defensive publication notice: The CCT architecture, gating logic, and
-super-additivity prediction framework are disclosed herein to establish global
-prior art. Commercial exploitation requires authorization from the author.
+To reproduce the qualitative architecture: run with default placeholder parameters.
+To explore the parameter space: use the --ranges flag to load the MANUSCRIPT_RANGES
+dict, which samples from Table 1 literature-bounded ranges (midpoints only).
 """
 
 import sys
@@ -596,8 +588,8 @@ def main(use_ranges=False):
     print()
     print("IMPORTANT: This implementation uses placeholder parameters.")
     print("Outputs demonstrate qualitative architecture ONLY.")
-    print("Exact manuscript quantitative results require proprietary")
-    print("calibrated parameters (subject to patent filing).")
+    print("No manuscript has been submitted for this project yet --")
+    print("there is no published quantitative result to reproduce.")
     if use_ranges:
         print("Mode: MANUSCRIPT_RANGES midpoints (illustrative only)")
     else:

@@ -8,7 +8,7 @@
 
 Companion code to the CCT Model Trilogy:
 
-- **Paper 1 (Review):** Olutogun E (2026). The Conjunctive Consolidation Threshold model: a tripartite pharmacological framework for encoding prevention in reward memory. *Neuroscience and Biobehavioral Reviews* (in revision).
+- **Paper 1 (Review):** Olutogun E (2026). The Conjunctive Consolidation Threshold model: a tripartite pharmacological framework for encoding prevention in reward memory. Manuscript in preparation; not yet submitted.
 - **Paper 2 (Specification):** Olutogun E (2026). Formal Mathematical Specification of the CCT Model: Encoding Probability Dynamics and Quantitative Predictions for Preclinical Validation. Preprint, OSF.
 - **Paper 3 (Human Translation):** Olutogun E (2026). Consolidation Threshold Dynamics in Human Drug-Associated Learning: Bayesian Parameter Integration, Population Heterogeneity, and Clinical Trial Architecture for the CCT Model. Preprint, OSF.
 
@@ -16,11 +16,21 @@ Companion code to the CCT Model Trilogy:
 
 ---
 
-## IMPORTANT: Intellectual Property Notice
+## Status Note
 
-> The core multi-axis coupling architecture, qualitative conjunctive threshold logic, D1/D5 permissive gate mechanism, and super-additivity prediction framework are disclosed herein as **defensive publication** to establish global prior art. Specific calibrated parameter sets, proprietary optimization workflows, full commercial implementation details, and exact quantitative tuning coefficients are held confidential and are the subject of pending provisional patent applications by the author (ORCID: 0009-0001-9272-6735). **Unauthorized commercial use is prohibited.**
->
-> Quantitative outputs (E_final values, super-additivity percentages) reported in the manuscript were generated with proprietary calibrated parameters that are not disclosed herein. The public implementation uses placeholder parameters and reproduces only the qualitative architecture.
+This repository implements the CCT model's public reference architecture (ODE system,
+D1/D5 permissive gate, super-additivity framework). No paper in this project's trilogy
+has been submitted to a journal yet.
+
+Earlier versions of this README described specific quantitative results (vehicle
+E_final = 0.855, super-additivity index = 12.8 pp) as manuscript findings withheld
+pending a patent filing. That patent filing is not being pursued, and those specific
+figures were not confirmed calibrated results — they have been removed. Calibrated
+parameters and validated quantitative results will be published here once that work
+is complete and independently reproducible.
+
+The public implementation below uses placeholder parameters (and, optionally,
+literature-range midpoints) and reproduces the qualitative architecture only.
 
 ---
 
@@ -57,11 +67,10 @@ python CCT_Paper2_Simulation_public.py --ranges
 | Multiplicative encoding probability P(t) | Yes |
 | D1/D5 permissive gate cross-axis coupling | Yes |
 | Positive super-additivity direction | Yes |
-| Exact manuscript E_final values (e.g., vehicle 0.855) | No |
-| Exact super-additivity index (12.8 pp) | No |
-| Proprietary calibrated coefficients | No |
+| Final calibrated, published quantitative results | Not yet — see Status Note above |
 
-The `--ranges` flag loads Table 1 literature midpoints (not calibrated posteriors) and still does not reproduce manuscript outputs.
+The `--ranges` flag loads Table 1 literature midpoints (not calibrated posteriors) and
+is illustrative only.
 
 ---
 
@@ -120,4 +129,4 @@ Preclinical Validation. Preprint, OSF. ORCID: 0009-0001-9272-6735.
 
 MIT License. See `LICENSE` file.
 
-Copyright (c) 2026 Eniola Olutogun. Commercial use of the model architecture requires authorization from the author.
+Copyright (c) 2026 Eniola Olutogun.
